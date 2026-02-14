@@ -1,7 +1,0 @@
-{
-  "mae": 0.333,
-  "rmse": 0.511,
-  "r2_score": 0.8008,
-  "trained_at": "2026-02-14T00:01:19.039083",
-  "model_path": "/opt/airflow/models/rf_model_20260214_000117.joblib"
-}
