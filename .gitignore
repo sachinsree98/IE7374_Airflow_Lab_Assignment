@@ -1,0 +1,19 @@
+
+# Airflow logs
+logs/
+
+# Model artifacts (generated at runtime)
+models/*.joblib
+models/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
