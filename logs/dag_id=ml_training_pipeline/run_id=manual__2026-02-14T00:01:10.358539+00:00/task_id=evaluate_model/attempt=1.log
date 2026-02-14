@@ -1,0 +1,24 @@
+[2026-02-14T00:01:18.337+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_training_pipeline.evaluate_model manual__2026-02-14T00:01:10.358539+00:00 [queued]>
+[2026-02-14T00:01:18.341+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_training_pipeline.evaluate_model manual__2026-02-14T00:01:10.358539+00:00 [queued]>
+[2026-02-14T00:01:18.341+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-02-14T00:01:18.347+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): evaluate_model> on 2026-02-14 00:01:10.358539+00:00
+[2026-02-14T00:01:18.349+0000] {standard_task_runner.py:60} INFO - Started process 271 to run task
+[2026-02-14T00:01:18.351+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_training_pipeline', 'evaluate_model', 'manual__2026-02-14T00:01:10.358539+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ml_training_dag.py', '--cfg-path', '/tmp/tmpcyxf34p3']
+[2026-02-14T00:01:18.353+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask evaluate_model
+[2026-02-14T00:01:18.379+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_training_pipeline.evaluate_model manual__2026-02-14T00:01:10.358539+00:00 [running]> on host a7e540bb26c3
+[2026-02-14T00:01:18.423+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sachin' AIRFLOW_CTX_DAG_ID='ml_training_pipeline' AIRFLOW_CTX_TASK_ID='evaluate_model' AIRFLOW_CTX_EXECUTION_DATE='2026-02-14T00:01:10.358539+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-14T00:01:10.358539+00:00'
+[2026-02-14T00:01:18.870+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/ml_training_dag.py:150 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2026-02-14T00:01:18.886+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/ml_training_dag.py:151 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2026-02-14T00:01:18.988+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/sklearn/ensemble/_base.py:168 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-02-14T00:01:19.047+0000] {logging_mixin.py:188} INFO - ==================================================
+[2026-02-14T00:01:19.047+0000] {logging_mixin.py:188} INFO -   MODEL EVALUATION RESULTS
+[2026-02-14T00:01:19.047+0000] {logging_mixin.py:188} INFO - ==================================================
+[2026-02-14T00:01:19.048+0000] {logging_mixin.py:188} INFO -   MAE:       0.333
+[2026-02-14T00:01:19.048+0000] {logging_mixin.py:188} INFO -   RMSE:      0.511
+[2026-02-14T00:01:19.048+0000] {logging_mixin.py:188} INFO -   R² Score:  0.8008
+[2026-02-14T00:01:19.048+0000] {logging_mixin.py:188} INFO -   Timestamp: 2026-02-14T00:01:19.039083
+[2026-02-14T00:01:19.048+0000] {logging_mixin.py:188} INFO - ==================================================
+[2026-02-14T00:01:19.049+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-02-14T00:01:19.056+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ml_training_pipeline, task_id=evaluate_model, execution_date=20260214T000110, start_date=20260214T000118, end_date=20260214T000119
+[2026-02-14T00:01:19.112+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-02-14T00:01:19.125+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
