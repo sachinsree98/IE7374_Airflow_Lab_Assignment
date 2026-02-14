@@ -12,7 +12,7 @@ An automated Airflow pipeline that periodically trains and evaluates a Random Fo
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/sachinsree98/IE7374_Airflow_Lab_Assignment
 cd airflow-ml-pipeline
 
 # 2. Build the Docker image
